@@ -1,6 +1,6 @@
 /* GENERATED FILE */
 import  { useContext  } from "solid-js";
-import { IconContext } from "../lib";
+import { IconContext, IconProps } from "../lib";
 
 const renderPathFor = (weight: string, color: string) => {
   switch (weight) {
@@ -23,7 +23,7 @@ const renderPathFor = (weight: string, color: string) => {
     case "fill":
       return (
         <>
-          <path d="M141.65723,133.65625l-41.98828,42a8.00018,8.00018,0,0,1-11.31543-11.3125L116.68994,136H24a8,8,0,0,1,0-16h92.68994L88.35352,91.65625A8.00018,8.00018,0,0,1,99.669,80.34375l41.98828,42A7.99974,7.99974,0,0,1,141.65723,133.65625ZM192,32H136a8,8,0,0,0,0,16h56V208H136a8,8,0,0,0,0,16h56a16.01833,16.01833,0,0,0,16-16V48A16.01833,16.01833,0,0,0,192,32Z"/>
+          <path d="M141.65723,133.65625l-41.98828,42A8.00033,8.00033,0,0,1,86.01074,170V136H24a8,8,0,0,1,0-16H86.01074V86A8.00033,8.00033,0,0,1,99.669,80.34375l41.98828,42A7.99974,7.99974,0,0,1,141.65723,133.65625ZM192,32H136a8,8,0,0,0,0,16h56V208H136a8,8,0,0,0,0,16h56a16.01833,16.01833,0,0,0,16-16V48A16.01833,16.01833,0,0,0,192,32Z"/>
         </>
       )
     case "light":
@@ -58,7 +58,7 @@ const renderPathFor = (weight: string, color: string) => {
   }
 };
 
-const SignIn = (props: any, ref: any)  => {
+const SignIn = (props: IconProps, ref: any)  => {
   const { color, size, weight, mirrored, children, ...restProps } = props;
   const {
     color: contextColor,
@@ -76,7 +76,7 @@ const SignIn = (props: any, ref: any)  => {
       height={size ?? contextSize}
       fill={color ?? contextColor}
       viewBox="0 0 256 256"
-      transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
+      //transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
       {...restContext}
       {...restProps}
     >

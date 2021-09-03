@@ -1,6 +1,6 @@
 /* GENERATED FILE */
 import  { useContext  } from "solid-js";
-import { IconContext } from "../lib";
+import { IconContext, IconProps } from "../lib";
 
 const renderPathFor = (weight: string, color: string) => {
   switch (weight) {
@@ -20,9 +20,7 @@ const renderPathFor = (weight: string, color: string) => {
     case "duotone":
       return (
         <>
-          <g opacity="0.2">
-    <path d="M200,152.86156,163.20286,189.6587a8,8,0,0,1-7.59714,2.10429L97.64881,177.27376a7.99992,7.99992,0,0,1-2.98764-1.45911L40,133.0718l32.57437-61.282,51.32-14.96153a8,8,0,0,1,5.537.39169L164,72.86156H143.31371a8,8,0,0,0-5.65686,2.34315L98.52241,114.33915a8,8,0,0,0,.85685,12.05686L104.8,130.46156a32,32,0,0,0,38.4,0l12.8-9.6Z"/>
-  </g>
+          <path d="M200,152.86156,163.20286,189.6587a8,8,0,0,1-7.59714,2.10429L97.64881,177.27376a7.99992,7.99992,0,0,1-2.98764-1.45911L40,133.0718l32.57437-61.282,51.32-14.96153a8,8,0,0,1,5.537.39169L164,72.86156H143.31371a8,8,0,0,0-5.65686,2.34315L98.52241,114.33915a8,8,0,0,0,.85685,12.05686L104.8,130.46156a32,32,0,0,0,38.4,0l12.8-9.6Z" opacity="0.2"/>
   <path d="M240.71765,121.78477,216,134.14359l-32-61.282,24.9693-12.48465a8,8,0,0,1,10.66912,3.45246l24.59293,47.097A8,8,0,0,1,240.71765,121.78477Z" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M40,133.0718,15.28235,120.713a8,8,0,0,1-3.5137-10.85838l24.59293-47.097A8,8,0,0,1,47.0307,59.30511L72,71.78976Z" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M216,134.14359l-16,18.718L163.20286,189.6587a8,8,0,0,1-7.59714,2.10429L97.64881,177.27376a7.99992,7.99992,0,0,1-2.98764-1.45911L40,133.0718" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
@@ -78,7 +76,7 @@ const renderPathFor = (weight: string, color: string) => {
   }
 };
 
-const Handshake = (props: any, ref: any)  => {
+const Handshake = (props: IconProps, ref: any)  => {
   const { color, size, weight, mirrored, children, ...restProps } = props;
   const {
     color: contextColor,
@@ -96,7 +94,7 @@ const Handshake = (props: any, ref: any)  => {
       height={size ?? contextSize}
       fill={color ?? contextColor}
       viewBox="0 0 256 256"
-      transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
+      //transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
       {...restContext}
       {...restProps}
     >

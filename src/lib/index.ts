@@ -1,6 +1,5 @@
 import { createContext, JSX, Component } from "solid-js";
 
-
 export interface IconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
   color?: string;
   size?: string | number;

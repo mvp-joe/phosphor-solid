@@ -1,6 +1,6 @@
 /* GENERATED FILE */
 import  { useContext  } from "solid-js";
-import { IconContext } from "../lib";
+import { IconContext, IconProps } from "../lib";
 
 const renderPathFor = (weight: string, color: string) => {
   switch (weight) {
@@ -14,9 +14,7 @@ const renderPathFor = (weight: string, color: string) => {
     case "duotone":
       return (
         <>
-          <g opacity="0.2">
-    <path d="M90.30559,130.37786a68.14083,68.14083,0,0,1,45.47328-47.32071l.15152-.04541Q135.99975,81.51458,136,80A64.02478,64.02478,0,0,0,86.37938,17.62177l-.00084.00019A64.05661,64.05661,0,0,1,9.622,94.37856l-.00023.001A64.12919,64.12919,0,0,0,46.99,138.92889l-.00581-.00661a44.06953,44.06953,0,0,1,43.32161-8.54436Z"/>
-  </g>
+          <path d="M90.30559,130.37786a68.14083,68.14083,0,0,1,45.47328-47.32071l.15152-.04541Q135.99975,81.51458,136,80A64.02478,64.02478,0,0,0,86.37938,17.62177l-.00084.00019A64.05661,64.05661,0,0,1,9.622,94.37856l-.00023.001A64.12919,64.12919,0,0,0,46.99,138.92889l-.00581-.00661a44.06953,44.06953,0,0,1,43.32161-8.54436Z" opacity="0.2"/>
   <path d="M88,148a68,68,0,1,1,68,68H76a44,44,0,1,1,14.30583-85.62208" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M46.99,138.92889A64.12919,64.12919,0,0,1,9.6218,94.37955l.00023-.001A64.0566,64.0566,0,0,0,86.37854,17.622l.00084-.00019A64.02478,64.02478,0,0,1,136,80q0,1.51431-.06961,3.01174" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
         </>
@@ -56,7 +54,7 @@ const renderPathFor = (weight: string, color: string) => {
   }
 };
 
-const CloudMoon = (props: any, ref: any)  => {
+const CloudMoon = (props: IconProps, ref: any)  => {
   const { color, size, weight, mirrored, children, ...restProps } = props;
   const {
     color: contextColor,
@@ -74,7 +72,7 @@ const CloudMoon = (props: any, ref: any)  => {
       height={size ?? contextSize}
       fill={color ?? contextColor}
       viewBox="0 0 256 256"
-      transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
+      //transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
       {...restContext}
       {...restProps}
     >

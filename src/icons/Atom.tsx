@@ -1,6 +1,6 @@
 /* GENERATED FILE */
 import  { useContext  } from "solid-js";
-import { IconContext } from "../lib";
+import { IconContext, IconProps } from "../lib";
 
 const renderPathFor = (weight: string, color: string) => {
   switch (weight) {
@@ -15,7 +15,8 @@ const renderPathFor = (weight: string, color: string) => {
     case "duotone":
       return (
         <>
-          <ellipse cx="128" cy="128" rx="44" ry="116" transform="translate(-53.01934 128) rotate(-45)" stroke-width="16" stroke={color} stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <ellipse cx="128" cy="128" rx="44" ry="116" transform="translate(-53.01934 128) rotate(-45)" opacity="0.2"/>
+  <ellipse cx="128" cy="128" rx="44" ry="116" transform="translate(-53.01934 128) rotate(-45)" stroke-width="16" stroke={color} stroke-linecap="round" stroke-linejoin="round" fill="none"/>
   <ellipse cx="128" cy="128" rx="116" ry="44" transform="translate(-53.01934 128) rotate(-45)" stroke-width="16" stroke={color} stroke-linecap="round" stroke-linejoin="round" fill="none"/>
   <circle cx="128" cy="128" r="12"/>
         </>
@@ -58,7 +59,7 @@ const renderPathFor = (weight: string, color: string) => {
   }
 };
 
-const Atom = (props: any, ref: any)  => {
+const Atom = (props: IconProps, ref: any)  => {
   const { color, size, weight, mirrored, children, ...restProps } = props;
   const {
     color: contextColor,
@@ -76,7 +77,7 @@ const Atom = (props: any, ref: any)  => {
       height={size ?? contextSize}
       fill={color ?? contextColor}
       viewBox="0 0 256 256"
-      transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
+      //transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
       {...restContext}
       {...restProps}
     >

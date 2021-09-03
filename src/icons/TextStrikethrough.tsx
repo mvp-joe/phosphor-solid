@@ -1,6 +1,6 @@
 /* GENERATED FILE */
 import  { useContext  } from "solid-js";
-import { IconContext } from "../lib";
+import { IconContext, IconProps } from "../lib";
 
 const renderPathFor = (weight: string, color: string) => {
   switch (weight) {
@@ -18,10 +18,8 @@ const renderPathFor = (weight: string, color: string) => {
       return (
         <>
           <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-  <g>
-    <path d="M76.334,96.00294A25.48209,25.48209,0,0,1,75.11111,88c0-22.09139,21.96094-40,52.88889-40,23.77865,0,42.25677,10.58606,49.529,25.52014" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-    <path d="M72,168c0,22.09139,25.07205,40,56,40s56-17.90861,56-40c0-23.76634-21.62275-32.97043-45.59723-40.00076" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-  </g>
+  <path d="M76.334,96.00294A25.48209,25.48209,0,0,1,75.11111,88c0-22.09139,21.96094-40,52.88889-40,23.77865,0,42.25677,10.58606,49.529,25.52014" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+  <path d="M72,168c0,22.09139,25.07205,40,56,40s56-17.90861,56-40c0-23.76634-21.62275-32.97043-45.59723-40.00076" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
         </>
       )
     case "fill":
@@ -68,7 +66,7 @@ const renderPathFor = (weight: string, color: string) => {
   }
 };
 
-const TextStrikethrough = (props: any, ref: any)  => {
+const TextStrikethrough = (props: IconProps, ref: any)  => {
   const { color, size, weight, mirrored, children, ...restProps } = props;
   const {
     color: contextColor,
@@ -86,7 +84,7 @@ const TextStrikethrough = (props: any, ref: any)  => {
       height={size ?? contextSize}
       fill={color ?? contextColor}
       viewBox="0 0 256 256"
-      transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
+      //transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
       {...restContext}
       {...restProps}
     >

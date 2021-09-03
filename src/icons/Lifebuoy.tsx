@@ -1,6 +1,6 @@
 /* GENERATED FILE */
 import  { useContext  } from "solid-js";
-import { IconContext } from "../lib";
+import { IconContext, IconProps } from "../lib";
 
 const renderPathFor = (weight: string, color: string) => {
   switch (weight) {
@@ -18,12 +18,8 @@ const renderPathFor = (weight: string, color: string) => {
     case "duotone":
       return (
         <>
-          <g opacity="0.2">
-    <path d="M195.88225,60.11775a96,96,0,0,1,0,135.7645l-39.598-39.598a40,40,0,0,0,0-56.56854Z"/>
-  </g>
-  <g opacity="0.2">
-    <path d="M60.11775,195.88225a96,96,0,0,1,0-135.7645l39.598,39.598a40,40,0,0,0,0,56.56854Z"/>
-  </g>
+          <path d="M195.88225,60.11775a96,96,0,0,1,0,135.7645l-39.598-39.598a40,40,0,0,0,0-56.56854Z" opacity="0.2"/>
+  <path d="M60.11775,195.88225a96,96,0,0,1,0-135.7645l39.598,39.598a40,40,0,0,0,0,56.56854Z" opacity="0.2"/>
   <circle cx="128" cy="128" r="96" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <circle cx="128" cy="128" r="40" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="99.71573" y1="99.71573" x2="60.11775" y2="60.11775" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
@@ -79,7 +75,7 @@ const renderPathFor = (weight: string, color: string) => {
   }
 };
 
-const Lifebuoy = (props: any, ref: any)  => {
+const Lifebuoy = (props: IconProps, ref: any)  => {
   const { color, size, weight, mirrored, children, ...restProps } = props;
   const {
     color: contextColor,
@@ -97,7 +93,7 @@ const Lifebuoy = (props: any, ref: any)  => {
       height={size ?? contextSize}
       fill={color ?? contextColor}
       viewBox="0 0 256 256"
-      transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
+      //transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
       {...restContext}
       {...restProps}
     >

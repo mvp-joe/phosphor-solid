@@ -1,6 +1,6 @@
 /* GENERATED FILE */
 import  { useContext  } from "solid-js";
-import { IconContext } from "../lib";
+import { IconContext, IconProps } from "../lib";
 
 const renderPathFor = (weight: string, color: string) => {
   switch (weight) {
@@ -18,8 +18,7 @@ const renderPathFor = (weight: string, color: string) => {
     case "duotone":
       return (
         <>
-          <polygon points="56 176 74.798 69.478 171.636 176 56 176" opacity="0.2"/>
-  <polyline points="91.246 40 176 40 196.415 155.686 138.867 92.383 91.246 40" opacity="0.2"/>
+          <polygon points="56 176 80 40 176 40 200 176 56 176" opacity="0.2"/>
   <line x1="91.24627" y1="40" x2="192" y2="40" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="128" y1="176" x2="128" y2="240" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="48" y1="40" x2="208" y2="216" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
@@ -75,7 +74,7 @@ const renderPathFor = (weight: string, color: string) => {
   }
 };
 
-const PushPinSimpleSlash = (props: any, ref: any)  => {
+const PushPinSimpleSlash = (props: IconProps, ref: any)  => {
   const { color, size, weight, mirrored, children, ...restProps } = props;
   const {
     color: contextColor,
@@ -93,7 +92,7 @@ const PushPinSimpleSlash = (props: any, ref: any)  => {
       height={size ?? contextSize}
       fill={color ?? contextColor}
       viewBox="0 0 256 256"
-      transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
+      //transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
       {...restContext}
       {...restProps}
     >

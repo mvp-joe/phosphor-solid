@@ -1,6 +1,6 @@
 /* GENERATED FILE */
 import  { useContext  } from "solid-js";
-import { IconContext } from "../lib";
+import { IconContext, IconProps } from "../lib";
 
 const renderPathFor = (weight: string, color: string) => {
   switch (weight) {
@@ -43,6 +43,7 @@ const renderPathFor = (weight: string, color: string) => {
       return (
         <>
           <path d="M200,112v88.88889A7.11111,7.11111,0,0,1,192.88889,208H40a8,8,0,0,1-8-8V88a8,8,0,0,1,8-8H85.33333a8,8,0,0,1,4.8,1.6l27.73334,20.8a8,8,0,0,0,4.8,1.6H192A8,8,0,0,1,200,112Z" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+  <path d="M200,112v88.88889A7.11111,7.11111,0,0,1,192.88889,208H40a8,8,0,0,1-8-8V88a8,8,0,0,1,8-8H85.33333a8,8,0,0,1,4.8,1.6l27.73334,20.8a8,8,0,0,0,4.8,1.6H192A8,8,0,0,1,200,112Z" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M64,80V56a8,8,0,0,1,8-8h45.33333a8,8,0,0,1,4.8,1.6l27.73334,20.8a8,8,0,0,0,4.8,1.6H224a8,8,0,0,1,8,8v88.88889A7.11111,7.11111,0,0,1,224.88889,176H200" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
         </>
       )
@@ -54,7 +55,7 @@ const renderPathFor = (weight: string, color: string) => {
   }
 };
 
-const Folders = (props: any, ref: any)  => {
+const Folders = (props: IconProps, ref: any)  => {
   const { color, size, weight, mirrored, children, ...restProps } = props;
   const {
     color: contextColor,
@@ -72,7 +73,7 @@ const Folders = (props: any, ref: any)  => {
       height={size ?? contextSize}
       fill={color ?? contextColor}
       viewBox="0 0 256 256"
-      transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
+      //transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
       {...restContext}
       {...restProps}
     >

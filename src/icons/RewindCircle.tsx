@@ -1,6 +1,6 @@
 /* GENERATED FILE */
 import  { useContext  } from "solid-js";
-import { IconContext } from "../lib";
+import { IconContext, IconProps } from "../lib";
 
 const renderPathFor = (weight: string, color: string) => {
   switch (weight) {
@@ -24,7 +24,7 @@ const renderPathFor = (weight: string, color: string) => {
     case "fill":
       return (
         <>
-          <path d="M24,128A104,104,0,1,0,128,24,104.11791,104.11791,0,0,0,24,128Zm32,0a7.99943,7.99943,0,0,1,3.5625-6.65625l48-32A8.00016,8.00016,0,0,1,120,96v32a7.99943,7.99943,0,0,1,3.5625-6.65625l48-32A8.00016,8.00016,0,0,1,184,96v64a7.99975,7.99975,0,0,1-12.4375,6.65625l-48-32A7.99943,7.99943,0,0,1,120,128v32a7.99975,7.99975,0,0,1-12.4375,6.65625l-48-32A7.99943,7.99943,0,0,1,56,128Z"/>
+          <path d="M24,128A104,104,0,1,0,128,24,104.11791,104.11791,0,0,0,24,128Zm44,0a7.99968,7.99968,0,0,1,3.41211-6.55371l40-28A8.00015,8.00015,0,0,1,124,100v28a7.99968,7.99968,0,0,1,3.41211-6.55371l40-28A8.00015,8.00015,0,0,1,180,100v56a8,8,0,0,1-12.58789,6.55371l-40-28A7.99968,7.99968,0,0,1,124,128v28a8,8,0,0,1-12.58789,6.55371l-40-28A7.99968,7.99968,0,0,1,68,128Z"/>
         </>
       )
     case "light":
@@ -59,7 +59,7 @@ const renderPathFor = (weight: string, color: string) => {
   }
 };
 
-const RewindCircle = (props: any, ref: any)  => {
+const RewindCircle = (props: IconProps, ref: any)  => {
   const { color, size, weight, mirrored, children, ...restProps } = props;
   const {
     color: contextColor,
@@ -77,7 +77,7 @@ const RewindCircle = (props: any, ref: any)  => {
       height={size ?? contextSize}
       fill={color ?? contextColor}
       viewBox="0 0 256 256"
-      transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
+      //transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
       {...restContext}
       {...restProps}
     >

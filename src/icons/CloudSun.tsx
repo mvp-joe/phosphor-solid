@@ -1,6 +1,6 @@
 /* GENERATED FILE */
 import  { useContext  } from "solid-js";
-import { IconContext } from "../lib";
+import { IconContext, IconProps } from "../lib";
 
 const renderPathFor = (weight: string, color: string) => {
   switch (weight) {
@@ -18,9 +18,7 @@ const renderPathFor = (weight: string, color: string) => {
     case "duotone":
       return (
         <>
-          <g opacity="0.2">
-    <path d="M131.83232,84.4235a48.00729,48.00729,0,1,0-80.18846,50.93024l-.00154-.00232a44.09694,44.09694,0,0,1,38.66351-4.9735l-.00024-.00007A68.15692,68.15692,0,0,1,131.83113,84.4204Z"/>
-  </g>
+          <path d="M131.83232,84.4235a48.00729,48.00729,0,1,0-80.18846,50.93024l-.00154-.00232a44.09694,44.09694,0,0,1,38.66351-4.9735l-.00024-.00007A68.15692,68.15692,0,0,1,131.83113,84.4204Z" opacity="0.2"/>
   <path d="M88,148a68,68,0,1,1,68,68H76a44,44,0,1,1,14.30583-85.62208" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="79.6638" y1="56.73022" x2="75.49625" y2="33.09483" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="48.68557" y1="76.45789" x2="29.02592" y2="62.69205" fill="none" stroke={color} stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
@@ -76,7 +74,7 @@ const renderPathFor = (weight: string, color: string) => {
   }
 };
 
-const CloudSun = (props: any, ref: any)  => {
+const CloudSun = (props: IconProps, ref: any)  => {
   const { color, size, weight, mirrored, children, ...restProps } = props;
   const {
     color: contextColor,
@@ -94,7 +92,7 @@ const CloudSun = (props: any, ref: any)  => {
       height={size ?? contextSize}
       fill={color ?? contextColor}
       viewBox="0 0 256 256"
-      transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
+      //transform={mirrored || contextMirrored ? "scale(-1, 1)" : undefined}
       {...restContext}
       {...restProps}
     >
