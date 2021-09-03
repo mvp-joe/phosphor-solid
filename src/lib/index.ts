@@ -5,7 +5,7 @@ export interface IconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
   size?: string | number;
   weight?: "thin" | "light" | "regular" | "bold" | "fill" | "duotone";
   mirrored?: boolean;
-  children: any;
+  children?: any;
 }
 
 export type Icon = Component<IconProps>;
