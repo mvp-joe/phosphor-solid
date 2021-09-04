@@ -4,7 +4,6 @@ const path = require("path");
 const chalk = require("chalk");
 
 const { ASSETS_PATH, COMPONENTS_PATH, INDEX_PATH } = require("./index");
-
 const icons = {};
 const weights = ["thin", "light", "regular", "bold", "fill", "duotone"];
 
@@ -184,8 +183,8 @@ export default ${name};
 function generateExports() {
   let indexString = `\
 /* GENERATED FILE */
-export { Icon, IconProps, IconContext } from "./lib";
-
+export { IconContext } from "./lib";
+export type { Icon, IconProps } from "./lib";
 `;
   for (let key in icons) {
     const name = key

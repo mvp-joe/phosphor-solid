@@ -1,6 +1,6 @@
 /* GENERATED FILE */
-export { Icon, IconProps, IconContext } from "./lib";
-
+export { IconContext } from "./lib";
+export type { Icon, IconProps } from "./lib";
 export { default as Activity } from "./icons/Activity";
 export { default as AddressBook } from "./icons/AddressBook";
 export { default as Airplane } from "./icons/Airplane";
