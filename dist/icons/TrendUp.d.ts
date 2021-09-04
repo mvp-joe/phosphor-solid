@@ -1,0 +1,3 @@
+import { IconProps } from "../lib";
+declare const TrendUp: (props: IconProps, ref: any) => import("solid-js").JSX.Element;
+export default TrendUp;
